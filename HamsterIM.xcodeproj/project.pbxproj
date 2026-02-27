@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+	5F1100012D6BF4D900A7E9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1000012D6BF4D900A7E9B1 /* AppDelegate.swift */; };
+	5F1100022D6BF4D900A7E9B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1000022D6BF4D900A7E9B1 /* SceneDelegate.swift */; };
+	5F1100032D6BF4D900A7E9B1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1000032D6BF4D900A7E9B1 /* RootViewController.swift */; };
+	5F1100042D6BF4D900A7E9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3000012D6BF4D900A7E9B1 /* LaunchScreen.storyboard */; };
+	5F1100052D6BF4D900A7E9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F1000062D6BF4D900A7E9B1 /* Assets.xcassets */; };
+	5F1101012D6BF4D900A7E9B1 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5F6000022D6BF4D900A7E9B1 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+	5F2100012D6BF4D900A7E9B1 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000012D6BF4D900A7E9B1 /* AppConfiguration.swift */; };
+	5F2100022D6BF4D900A7E9B1 /* ManifestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000022D6BF4D900A7E9B1 /* ManifestModels.swift */; };
+	5F2100032D6BF4D900A7E9B1 /* ManifestValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000032D6BF4D900A7E9B1 /* ManifestValidator.swift */; };
+	5F2100042D6BF4D900A7E9B1 /* ManifestCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000042D6BF4D900A7E9B1 /* ManifestCache.swift */; };
+	5F2100052D6BF4D900A7E9B1 /* ManifestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000052D6BF4D900A7E9B1 /* ManifestRepository.swift */; };
+	5F2100062D6BF4D900A7E9B1 /* HamsterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000062D6BF4D900A7E9B1 /* HamsterCollectionViewCell.swift */; };
+	5F2100072D6BF4D900A7E9B1 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000072D6BF4D900A7E9B1 /* MessagesViewController.swift */; };
+	5F2100082D6BF4D900A7E9B1 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000082D6BF4D900A7E9B1 /* ImageLoader.swift */; };
+	5F2100092D6BF4D900A7E9B1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000092D6BF4D900A7E9B1 /* Logger.swift */; };
+	5F21000A2D6BF4D900A7E9B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3000032D6BF4D900A7E9B1 /* MainInterface.storyboard */; };
+	5F21000B2D6BF4D900A7E9B1 /* hamster_manifest_seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F20000C2D6BF4D900A7E9B1 /* hamster_manifest_seed.json */; };
+	5F21000C2D6BF4D900A7E9B1 /* sample_remote_manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F20000D2D6BF4D900A7E9B1 /* sample_remote_manifest.json */; };
+	5F21000D2D6BF4D900A7E9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F20000E2D6BF4D900A7E9B1 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+	5F5000012D6BF4D900A7E9B1 /* PBXContainerItemProxy */ = {
+		isa = PBXContainerItemProxy;
+		containerPortal = 5F0000012D6BF4D900A7E9B1 /* Project object */;
+		proxyType = 1;
+		remoteGlobalIDString = 5F4000012D6BF4D900A7E9B1;
+		remoteInfo = MessagesExtension;
+	};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+	5F1200012D6BF4D900A7E9B1 /* Embed App Extensions */ = {
+		isa = PBXCopyFilesBuildPhase;
+		buildActionMask = 2147483647;
+		dstPath = "";
+		dstSubfolderSpec = 13;
+		files = (
+			5F1101012D6BF4D900A7E9B1 /* MessagesExtension.appex in Embed App Extensions */,
+		);
+		name = "Embed App Extensions";
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+	5F1000012D6BF4D900A7E9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+	5F1000022D6BF4D900A7E9B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+	5F1000032D6BF4D900A7E9B1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+	5F1000042D6BF4D900A7E9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+	5F1000062D6BF4D900A7E9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+	5F2000012D6BF4D900A7E9B1 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+	5F2000022D6BF4D900A7E9B1 /* ManifestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestModels.swift; sourceTree = "<group>"; };
+	5F2000032D6BF4D900A7E9B1 /* ManifestValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestValidator.swift; sourceTree = "<group>"; };
+	5F2000042D6BF4D900A7E9B1 /* ManifestCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestCache.swift; sourceTree = "<group>"; };
+	5F2000052D6BF4D900A7E9B1 /* ManifestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManifestRepository.swift; sourceTree = "<group>"; };
+	5F2000062D6BF4D900A7E9B1 /* HamsterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamsterCollectionViewCell.swift; sourceTree = "<group>"; };
+	5F2000072D6BF4D900A7E9B1 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+	5F2000082D6BF4D900A7E9B1 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+	5F2000092D6BF4D900A7E9B1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+	5F20000A2D6BF4D900A7E9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+	5F20000C2D6BF4D900A7E9B1 /* hamster_manifest_seed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hamster_manifest_seed.json; sourceTree = "<group>"; };
+	5F20000D2D6BF4D900A7E9B1 /* sample_remote_manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_remote_manifest.json; sourceTree = "<group>"; };
+	5F20000E2D6BF4D900A7E9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+	5F3000022D6BF4D900A7E9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+	5F3000042D6BF4D900A7E9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+	5F6000012D6BF4D900A7E9B1 /* HamsterIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamsterIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+	5F6000022D6BF4D900A7E9B1 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+	5F0200012D6BF4D900A7E9B1 /* Frameworks */ = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	5F4200012D6BF4D900A7E9B1 /* Frameworks */ = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+	5F0000022D6BF4D900A7E9B1 = {
+		isa = PBXGroup;
+		children = (
+			5F0000102D6BF4D900A7E9B1 /* HamsterIM */,
+			5F0000202D6BF4D900A7E9B1 /* MessagesExtension */,
+			5F6000032D6BF4D900A7E9B1 /* Products */,
+		);
+		sourceTree = "<group>";
+	};
+	5F0000102D6BF4D900A7E9B1 /* HamsterIM */ = {
+		isa = PBXGroup;
+		children = (
+			5F1000012D6BF4D900A7E9B1 /* AppDelegate.swift */,
+			5F1000022D6BF4D900A7E9B1 /* SceneDelegate.swift */,
+			5F1000032D6BF4D900A7E9B1 /* RootViewController.swift */,
+			5F3000012D6BF4D900A7E9B1 /* LaunchScreen.storyboard */,
+			5F1000062D6BF4D900A7E9B1 /* Assets.xcassets */,
+			5F1000042D6BF4D900A7E9B1 /* Info.plist */,
+		);
+		path = HamsterIM;
+		sourceTree = "<group>";
+	};
+	5F0000202D6BF4D900A7E9B1 /* MessagesExtension */ = {
+		isa = PBXGroup;
+		children = (
+			5F0000212D6BF4D900A7E9B1 /* Sources */,
+			5F0000222D6BF4D900A7E9B1 /* Resources */,
+			5F20000A2D6BF4D900A7E9B1 /* Info.plist */,
+		);
+		path = MessagesExtension;
+		sourceTree = "<group>";
+	};
+	5F0000212D6BF4D900A7E9B1 /* Sources */ = {
+		isa = PBXGroup;
+		children = (
+			5F0000232D6BF4D900A7E9B1 /* Configuration */,
+			5F0000242D6BF4D900A7E9B1 /* Manifest */,
+			5F0000252D6BF4D900A7E9B1 /* UI */,
+			5F0000262D6BF4D900A7E9B1 /* Utility */,
+		);
+		sourceTree = "<group>";
+	};
+	5F0000222D6BF4D900A7E9B1 /* Resources */ = {
+		isa = PBXGroup;
+		children = (
+			5F3000032D6BF4D900A7E9B1 /* MainInterface.storyboard */,
+			5F0000272D6BF4D900A7E9B1 /* Manifest */,
+			5F20000E2D6BF4D900A7E9B1 /* Assets.xcassets */,
+		);
+		sourceTree = "<group>";
+	};
+	5F0000232D6BF4D900A7E9B1 /* Configuration */ = {
+		isa = PBXGroup;
+		children = (
+			5F2000012D6BF4D900A7E9B1 /* AppConfiguration.swift */,
+		);
+		path = Sources/Configuration;
+		sourceTree = "<group>";
+	};
+	5F0000242D6BF4D900A7E9B1 /* Manifest */ = {
+		isa = PBXGroup;
+		children = (
+			5F2000022D6BF4D900A7E9B1 /* ManifestModels.swift */,
+			5F2000032D6BF4D900A7E9B1 /* ManifestValidator.swift */,
+			5F2000042D6BF4D900A7E9B1 /* ManifestCache.swift */,
+			5F2000052D6BF4D900A7E9B1 /* ManifestRepository.swift */,
+		);
+		path = Sources/Manifest;
+		sourceTree = "<group>";
+	};
+	5F0000252D6BF4D900A7E9B1 /* UI */ = {
+		isa = PBXGroup;
+		children = (
+			5F2000062D6BF4D900A7E9B1 /* HamsterCollectionViewCell.swift */,
+			5F2000072D6BF4D900A7E9B1 /* MessagesViewController.swift */,
+		);
+		path = Sources/UI;
+		sourceTree = "<group>";
+	};
+	5F0000262D6BF4D900A7E9B1 /* Utility */ = {
+		isa = PBXGroup;
+		children = (
+			5F2000082D6BF4D900A7E9B1 /* ImageLoader.swift */,
+			5F2000092D6BF4D900A7E9B1 /* Logger.swift */,
+		);
+		path = Sources/Utility;
+		sourceTree = "<group>";
+	};
+	5F0000272D6BF4D900A7E9B1 /* Manifest */ = {
+		isa = PBXGroup;
+		children = (
+			5F20000C2D6BF4D900A7E9B1 /* hamster_manifest_seed.json */,
+			5F20000D2D6BF4D900A7E9B1 /* sample_remote_manifest.json */,
+		);
+		path = Resources/Manifest;
+		sourceTree = "<group>";
+	};
+	5F6000032D6BF4D900A7E9B1 /* Products */ = {
+		isa = PBXGroup;
+		children = (
+			5F6000012D6BF4D900A7E9B1 /* HamsterIM.app */,
+			5F6000022D6BF4D900A7E9B1 /* MessagesExtension.appex */,
+		);
+		name = Products;
+		sourceTree = "<group>";
+	};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+	5F3000002D6BF4D900A7E9B1 /* HamsterIM */ = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 5F8000012D6BF4D900A7E9B1 /* Build configuration list for PBXNativeTarget "HamsterIM" */;
+		buildPhases = (
+			5F0100012D6BF4D900A7E9B1 /* Sources */,
+			5F0200012D6BF4D900A7E9B1 /* Frameworks */,
+			5F0300012D6BF4D900A7E9B1 /* Resources */,
+			5F1200012D6BF4D900A7E9B1 /* Embed App Extensions */,
+		);
+		buildRules = (
+		);
+		dependencies = (
+			5F5000022D6BF4D900A7E9B1 /* PBXTargetDependency */,
+		);
+		name = HamsterIM;
+		productName = HamsterIM;
+		productReference = 5F6000012D6BF4D900A7E9B1 /* HamsterIM.app */;
+		productType = "com.apple.product-type.application";
+	};
+	5F4000012D6BF4D900A7E9B1 /* MessagesExtension */ = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 5F8000022D6BF4D900A7E9B1 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+		buildPhases = (
+			5F4100012D6BF4D900A7E9B1 /* Sources */,
+			5F4200012D6BF4D900A7E9B1 /* Frameworks */,
+			5F4300012D6BF4D900A7E9B1 /* Resources */,
+		);
+		buildRules = (
+		);
+		dependencies = (
+		);
+		name = MessagesExtension;
+		productName = MessagesExtension;
+		productReference = 5F6000022D6BF4D900A7E9B1 /* MessagesExtension.appex */;
+		productType = "com.apple.product-type.app-extension.messages";
+	};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+	5F0000012D6BF4D900A7E9B1 /* Project object */ = {
+		isa = PBXProject;
+		attributes = {
+			BuildIndependentTargetsInParallel = YES;
+			LastSwiftUpdateCheck = 1550;
+			LastUpgradeCheck = 1550;
+			ORGANIZATIONNAME = Openclaw;
+			TargetAttributes = {
+				5F3000002D6BF4D900A7E9B1 = {
+					CreatedOnToolsVersion = 15.5;
+				};
+				5F4000012D6BF4D900A7E9B1 = {
+					CreatedOnToolsVersion = 15.5;
+				};
+			};
+		};
+		buildConfigurationList = 5F8000002D6BF4D900A7E9B1 /* Build configuration list for PBXProject "HamsterIM" */;
+		compatibilityVersion = "Xcode 15.0";
+		developmentRegion = en;
+		hasScannedForEncodings = 0;
+		knownRegions = (
+			en,
+			Base,
+		);
+		mainGroup = 5F0000022D6BF4D900A7E9B1;
+		productRefGroup = 5F6000032D6BF4D900A7E9B1 /* Products */;
+		projectDirPath = "";
+		projectRoot = "";
+		targets = (
+			5F3000002D6BF4D900A7E9B1 /* HamsterIM */,
+			5F4000012D6BF4D900A7E9B1 /* MessagesExtension */,
+		);
+	};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+	5F0300012D6BF4D900A7E9B1 /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			5F1100042D6BF4D900A7E9B1 /* LaunchScreen.storyboard in Resources */,
+			5F1100052D6BF4D900A7E9B1 /* Assets.xcassets in Resources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	5F4300012D6BF4D900A7E9B1 /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			5F21000D2D6BF4D900A7E9B1 /* Assets.xcassets in Resources */,
+			5F21000B2D6BF4D900A7E9B1 /* hamster_manifest_seed.json in Resources */,
+			5F21000C2D6BF4D900A7E9B1 /* sample_remote_manifest.json in Resources */,
+			5F21000A2D6BF4D900A7E9B1 /* MainInterface.storyboard in Resources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+	5F0100012D6BF4D900A7E9B1 /* Sources */ = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			5F1100032D6BF4D900A7E9B1 /* RootViewController.swift in Sources */,
+			5F1100022D6BF4D900A7E9B1 /* SceneDelegate.swift in Sources */,
+			5F1100012D6BF4D900A7E9B1 /* AppDelegate.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+	5F4100012D6BF4D900A7E9B1 /* Sources */ = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			5F2100062D6BF4D900A7E9B1 /* HamsterCollectionViewCell.swift in Sources */,
+			5F2100032D6BF4D900A7E9B1 /* ManifestValidator.swift in Sources */,
+			5F2100072D6BF4D900A7E9B1 /* MessagesViewController.swift in Sources */,
+			5F2100082D6BF4D900A7E9B1 /* ImageLoader.swift in Sources */,
+			5F2100012D6BF4D900A7E9B1 /* AppConfiguration.swift in Sources */,
+			5F2100042D6BF4D900A7E9B1 /* ManifestCache.swift in Sources */,
+			5F2100052D6BF4D900A7E9B1 /* ManifestRepository.swift in Sources */,
+			5F2100092D6BF4D900A7E9B1 /* Logger.swift in Sources */,
+			5F2100022D6BF4D900A7E9B1 /* ManifestModels.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+	5F5000022D6BF4D900A7E9B1 /* PBXTargetDependency */ = {
+		isa = PBXTargetDependency;
+		target = 5F4000012D6BF4D900A7E9B1 /* MessagesExtension */;
+		targetProxy = 5F5000012D6BF4D900A7E9B1 /* PBXContainerItemProxy */;
+	};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+	5F3000012D6BF4D900A7E9B1 /* LaunchScreen.storyboard */ = {
+		isa = PBXVariantGroup;
+		children = (
+			5F3000022D6BF4D900A7E9B1 /* Base */,
+		);
+		name = LaunchScreen.storyboard;
+		sourceTree = "<group>";
+	};
+	5F3000032D6BF4D900A7E9B1 /* MainInterface.storyboard */ = {
+		isa = PBXVariantGroup;
+		children = (
+			5F3000042D6BF4D900A7E9B1 /* Base */,
+		);
+		name = MainInterface.storyboard;
+		sourceTree = "<group>";
+	};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+	5F7000012D6BF4D900A7E9B1 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			ENABLE_TESTABILITY = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_DYNAMIC_NO_PIC = NO;
+			GCC_NO_COMMON_BLOCKS = YES;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			GCC_PREPROCESSOR_DEFINITIONS = (
+				"DEBUG=1",
+				"$(inherited)",
+			);
+			GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+			GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+			GCC_WARN_UNDECLARED_SELECTOR = YES;
+			GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			ONLY_ACTIVE_ARCH = YES;
+			SDKROOT = iphoneos;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			SWIFT_VERSION = 5.9;
+		};
+		name = Debug;
+	};
+	5F7000022D6BF4D900A7E9B1 /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_NS_ASSERTIONS = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+			GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+			GCC_WARN_UNDECLARED_SELECTOR = YES;
+			GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+			GCC_WARN_UNUSED_FUNCTION = YES;
+			GCC_WARN_UNUSED_VARIABLE = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			SDKROOT = iphoneos;
+			SWIFT_COMPILATION_MODE = wholemodule;
+			SWIFT_VERSION = 5.9;
+			VALIDATE_PRODUCT = YES;
+		};
+		name = Release;
+	};
+	5F7000032D6BF4D900A7E9B1 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			INFOPLIST_FILE = HamsterIM/Info.plist;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/Frameworks",
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = dev.openclaw.hamsterim;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_VERSION = 5.9;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		};
+		name = Debug;
+	};
+	5F7000042D6BF4D900A7E9B1 /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			INFOPLIST_FILE = HamsterIM/Info.plist;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/Frameworks",
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = dev.openclaw.hamsterim;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_VERSION = 5.9;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		};
+		name = Release;
+	};
+	5F7000052D6BF4D900A7E9B1 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			INFOPLIST_FILE = MessagesExtension/Info.plist;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/Frameworks",
+				"@executable_path/../../Frameworks",
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = dev.openclaw.hamsterim.MessagesExtension;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SKIP_INSTALL = YES;
+			SWIFT_VERSION = 5.9;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		};
+		name = Debug;
+	};
+	5F7000062D6BF4D900A7E9B1 /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			DEVELOPMENT_TEAM = "";
+			INFOPLIST_FILE = MessagesExtension/Info.plist;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = (
+				"$(inherited)",
+				"@executable_path/Frameworks",
+				"@executable_path/../../Frameworks",
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = dev.openclaw.hamsterim.MessagesExtension;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SKIP_INSTALL = YES;
+			SWIFT_VERSION = 5.9;
+			TARGETED_DEVICE_FAMILY = "1,2";
+		};
+		name = Release;
+	};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+	5F8000002D6BF4D900A7E9B1 /* Build configuration list for PBXProject "HamsterIM" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			5F7000012D6BF4D900A7E9B1 /* Debug */,
+			5F7000022D6BF4D900A7E9B1 /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	5F8000012D6BF4D900A7E9B1 /* Build configuration list for PBXNativeTarget "HamsterIM" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			5F7000032D6BF4D900A7E9B1 /* Debug */,
+			5F7000042D6BF4D900A7E9B1 /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	5F8000022D6BF4D900A7E9B1 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			5F7000052D6BF4D900A7E9B1 /* Debug */,
+			5F7000062D6BF4D900A7E9B1 /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F0000012D6BF4D900A7E9B1 /* Project object */;
+}

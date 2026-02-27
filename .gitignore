@@ -1,0 +1,23 @@
+# Xcode build products
+build/
+DerivedData/
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdata/
+
+# Swift Package Manager
+.build/
+
+# Dependency managers
+Pods/
+Carthage/
+.swiftpm/
+
+# User-specific state
+*.xcscmblueprint
+*.moved-aside
+.DS_Store
+
+# Generated manifests/exports
+MessagesExtension/Resources/Manifest/hamster_manifest_cache.json
+MessagesExtension/Resources/Manifest/exported-manifest.json

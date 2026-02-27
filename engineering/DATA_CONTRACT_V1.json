@@ -1,0 +1,19 @@
+{
+  "version": "v1",
+  "generatedAt": "ISO-8601",
+  "items": [
+    {
+      "id": "string",
+      "imageUrl": "https://...",
+      "thumbnailUrl": "https://...",
+      "tags": ["hamster", "mood:sad", "style:meme"],
+      "popularity": 0,
+      "createdAt": "ISO-8601",
+      "source": {
+        "platform": "instagram",
+        "account": "almarts27",
+        "postId": "string"
+      }
+    }
+  ]
+}

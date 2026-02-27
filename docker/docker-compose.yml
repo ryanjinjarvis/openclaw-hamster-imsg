@@ -1,0 +1,13 @@
+services:
+  hamster-pipeline:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: hamster-pipeline
+    environment:
+      - WORKSPACE_DIR=/workspace
+      - RUN_MODE=loop
+      - INTERVAL_HOURS=24
+    volumes:
+      - ../../:/workspace
+    restart: unless-stopped

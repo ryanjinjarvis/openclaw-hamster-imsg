@@ -1,0 +1,32 @@
+{
+  "version": "v1",
+  "generatedAt": "2026-02-27T21:00:00Z",
+  "items": [
+    {
+      "id": "sample-1",
+      "imageUrl": "https://cdn.openclaw.dev/hamsters/sample-1.png",
+      "thumbnailUrl": "https://cdn.openclaw.dev/hamsters/sample-1-thumb.png",
+      "tags": ["hamster", "mood:excited", "style:meme"],
+      "popularity": 95000,
+      "createdAt": "2026-02-22T08:00:00Z",
+      "source": {
+        "platform": "instagram",
+        "account": "almarts27",
+        "postId": "DVHaSample"
+      }
+    },
+    {
+      "id": "sample-2",
+      "imageUrl": "https://cdn.openclaw.dev/hamsters/sample-2.png",
+      "thumbnailUrl": "https://cdn.openclaw.dev/hamsters/sample-2-thumb.png",
+      "tags": ["hamster", "mood:chill", "style:illustration"],
+      "popularity": 54000,
+      "createdAt": "2026-02-18T18:32:00Z",
+      "source": {
+        "platform": "instagram",
+        "account": "almarts27",
+        "postId": "DVHaSample2"
+      }
+    }
+  ]
+}
