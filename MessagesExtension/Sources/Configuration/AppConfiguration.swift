@@ -1,7 +1,7 @@
 import Foundation
 
 enum AppConfiguration {
-    static let remoteManifestURL = URL(string: "https://static.openclaw.dev/hamster-pack/v1/manifest.json")!
+    static let remoteManifestURL = URL(string: "https://cdn.jsdelivr.net/gh/ryanjinjarvis/openclaw-hamster-imsg@main/remote_assets/manifest_v1.json")!
     static let manifestRequestTimeout: TimeInterval = 10
     static let telemetryEnabled = false
 }

@@ -1,0 +1,33 @@
+{
+  "version": "v1",
+  "generatedAt": "2026-02-27T22:10:00Z",
+  "items": [
+    {
+      "id": "remote-seed-1",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/ryanjinjarvis/openclaw-hamster-imsg@main/remote_assets/images/hamster_seed_1.jpg",
+      "thumbnailUrl": "https://cdn.jsdelivr.net/gh/ryanjinjarvis/openclaw-hamster-imsg@main/remote_assets/images/hamster_seed_1.jpg",
+      "tags": ["hamster", "mood:sad", "style:meme"],
+      "popularity": 100,
+      "createdAt": "2026-02-27T22:10:00Z",
+      "source": { "platform": "remote", "account": "openclaw-hamster-imsg", "postId": "remote-seed-1" }
+    },
+    {
+      "id": "remote-seed-2",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/ryanjinjarvis/openclaw-hamster-imsg@main/remote_assets/images/hamster_seed_2.jpg",
+      "thumbnailUrl": "https://cdn.jsdelivr.net/gh/ryanjinjarvis/openclaw-hamster-imsg@main/remote_assets/images/hamster_seed_2.jpg",
+      "tags": ["hamster", "mood:cry", "style:meme"],
+      "popularity": 90,
+      "createdAt": "2026-02-27T22:10:00Z",
+      "source": { "platform": "remote", "account": "openclaw-hamster-imsg", "postId": "remote-seed-2" }
+    },
+    {
+      "id": "remote-seed-3",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/ryanjinjarvis/openclaw-hamster-imsg@main/remote_assets/images/hamster_seed_3.jpg",
+      "thumbnailUrl": "https://cdn.jsdelivr.net/gh/ryanjinjarvis/openclaw-hamster-imsg@main/remote_assets/images/hamster_seed_3.jpg",
+      "tags": ["hamster", "mood:shock", "style:meme"],
+      "popularity": 80,
+      "createdAt": "2026-02-27T22:10:00Z",
+      "source": { "platform": "remote", "account": "openclaw-hamster-imsg", "postId": "remote-seed-3" }
+    }
+  ]
+}

@@ -15,11 +15,7 @@ final class HamsterCollectionViewCell: UICollectionViewCell {
 
     private let tagLabel: UILabel = {
         let label = PaddingLabel()
-        label.font = UIFont.preferredFont(forTextStyle: .caption1)
-        label.textColor = .white
-        label.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.85)
-        label.layer.cornerRadius = 8
-        label.layer.masksToBounds = true
+        label.isHidden = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

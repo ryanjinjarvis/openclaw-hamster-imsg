@@ -19,9 +19,10 @@ final class MessagesViewController: MSMessagesAppViewController {
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalWidth(1.0))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             item.contentInsets = NSDirectionalEdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6)
-            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.6))
-            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
-            return NSCollectionLayoutSection(group: group)
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.5))
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
+            let section = NSCollectionLayoutSection(group: group)
+            return section
         }
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.register(HamsterCollectionViewCell.self, forCellWithReuseIdentifier: HamsterCollectionViewCell.reuseIdentifier)
