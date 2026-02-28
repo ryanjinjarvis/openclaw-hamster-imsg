@@ -1,31 +1,44 @@
 {
   "version": "v1",
-  "generatedAt": "2026-02-27T20:21:17Z",
+  "generatedAt": "2026-02-27T21:50:00Z",
   "items": [
     {
-      "id": "3839157710894339387",
-      "imageUrl": "https://scontent-sjc6-1.cdninstagram.com/v/t51.82787-15/641852588_17960484615057476_6367049891291438844_n.jpg",
-      "thumbnailUrl": "https://scontent-sjc6-1.cdninstagram.com/v/t51.82787-15/641852588_17960484615057476_6367049891291438844_n.jpg",
-      "tags": ["hamster", "art_style:illustration", "mood:unknown"],
-      "popularity": 60326,
-      "createdAt": "2026-02-23T21:48:04Z",
+      "id": "seed-1",
+      "imageUrl": "asset://hamster_seed_1",
+      "thumbnailUrl": "asset://hamster_seed_1",
+      "tags": ["hamster", "mood:sad", "style:meme"],
+      "popularity": 100,
+      "createdAt": "2026-02-27T21:50:00Z",
       "source": {
-        "platform": "instagram",
-        "account": "almarts27",
-        "postId": "DVHbZjqjxU7"
+        "platform": "seed",
+        "account": "local",
+        "postId": "seed-1"
       }
     },
     {
-      "id": "3824018996606030904",
-      "imageUrl": "https://scontent-sjc6-1.cdninstagram.com/v/t51.82787-15/627544496_17958183543057476_332272488549988846_n.jpg",
-      "thumbnailUrl": "https://scontent-sjc6-1.cdninstagram.com/v/t51.82787-15/627544496_17958183543057476_332272488549988846_n.jpg",
-      "tags": ["hamster", "mood:playful", "style:meme"],
-      "popularity": 42110,
-      "createdAt": "2026-02-20T10:12:00Z",
+      "id": "seed-2",
+      "imageUrl": "asset://hamster_seed_2",
+      "thumbnailUrl": "asset://hamster_seed_2",
+      "tags": ["hamster", "mood:cry", "style:meme"],
+      "popularity": 90,
+      "createdAt": "2026-02-27T21:50:00Z",
       "source": {
-        "platform": "instagram",
-        "account": "almarts27",
-        "postId": "DVBvV7IOkFe"
+        "platform": "seed",
+        "account": "local",
+        "postId": "seed-2"
+      }
+    },
+    {
+      "id": "seed-3",
+      "imageUrl": "asset://hamster_seed_3",
+      "thumbnailUrl": "asset://hamster_seed_3",
+      "tags": ["hamster", "mood:shock", "style:meme"],
+      "popularity": 80,
+      "createdAt": "2026-02-27T21:50:00Z",
+      "source": {
+        "platform": "seed",
+        "account": "local",
+        "postId": "seed-3"
       }
     }
   ]

@@ -17,6 +17,12 @@ final class ImageLoader {
             return
         }
 
+        if url.scheme == "asset", let host = url.host, let image = UIImage(named: host) {
+            cache.setObject(image, forKey: url as NSURL)
+            completion(image)
+            return
+        }
+
         queue.async {
             let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 15)
             let task = self.session.dataTask(with: request) { data, _, error in
