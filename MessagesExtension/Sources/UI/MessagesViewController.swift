@@ -113,7 +113,11 @@ final class MessagesViewController: MSMessagesAppViewController {
                 self.applySnapshot(filtered: self.currentFilteredItems())
                 self.updateStatus("Synced \(manifest.items.count) hamsters")
             case .failure(let error):
-                self.updateStatus("Offline mode: \(MessagesViewController.format(error: error))")
+                if self.manifestItems.isEmpty {
+                    self.updateStatus("Offline mode: \(MessagesViewController.format(error: error))")
+                } else {
+                    self.updateStatus("Using local hamster pack (offline)")
+                }
             }
         }
     }
