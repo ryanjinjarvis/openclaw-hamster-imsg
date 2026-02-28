@@ -22,7 +22,7 @@
 	5F2100072D6BF4D900A7E9B1 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000072D6BF4D900A7E9B1 /* MessagesViewController.swift */; };
 	5F2100082D6BF4D900A7E9B1 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000082D6BF4D900A7E9B1 /* ImageLoader.swift */; };
 	5F2100092D6BF4D900A7E9B1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2000092D6BF4D900A7E9B1 /* Logger.swift */; };
-	5F21000A2D6BF4D900A7E9B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3000032D6BF4D900A7E9B1 /* MainInterface.storyboard */; };
+
 	5F21000B2D6BF4D900A7E9B1 /* hamster_manifest_seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F20000C2D6BF4D900A7E9B1 /* hamster_manifest_seed.json */; };
 	5F21000C2D6BF4D900A7E9B1 /* sample_remote_manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F20000D2D6BF4D900A7E9B1 /* sample_remote_manifest.json */; };
 	5F21000D2D6BF4D900A7E9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F20000E2D6BF4D900A7E9B1 /* Assets.xcassets */; };
@@ -72,7 +72,7 @@
 	5F20000D2D6BF4D900A7E9B1 /* sample_remote_manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_remote_manifest.json; sourceTree = "<group>"; };
 	5F20000E2D6BF4D900A7E9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 	5F3000022D6BF4D900A7E9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-	5F3000042D6BF4D900A7E9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+
 	5F6000012D6BF4D900A7E9B1 /* HamsterIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamsterIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 	5F6000022D6BF4D900A7E9B1 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,7 +140,7 @@
 	5F0000222D6BF4D900A7E9B1 /* Resources */ = {
 		isa = PBXGroup;
 		children = (
-			5F3000032D6BF4D900A7E9B1 /* MainInterface.storyboard */,
+
 			5F0000272D6BF4D900A7E9B1 /* Manifest */,
 			5F20000E2D6BF4D900A7E9B1 /* Assets.xcassets */,
 		);
@@ -295,7 +295,7 @@
 			5F21000D2D6BF4D900A7E9B1 /* Assets.xcassets in Resources */,
 			5F21000B2D6BF4D900A7E9B1 /* hamster_manifest_seed.json in Resources */,
 			5F21000C2D6BF4D900A7E9B1 /* sample_remote_manifest.json in Resources */,
-			5F21000A2D6BF4D900A7E9B1 /* MainInterface.storyboard in Resources */,
+
 		);
 		runOnlyForDeploymentPostprocessing = 0;
 	};
@@ -345,14 +345,6 @@
 			5F3000022D6BF4D900A7E9B1 /* Base */,
 		);
 		name = LaunchScreen.storyboard;
-		sourceTree = "<group>";
-	};
-	5F3000032D6BF4D900A7E9B1 /* MainInterface.storyboard */ = {
-		isa = PBXVariantGroup;
-		children = (
-			5F3000042D6BF4D900A7E9B1 /* Base */,
-		);
-		name = MainInterface.storyboard;
 		sourceTree = "<group>";
 	};
 /* End PBXVariantGroup section */
