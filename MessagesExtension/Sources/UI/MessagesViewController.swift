@@ -15,15 +15,10 @@ final class MessagesViewController: MSMessagesAppViewController {
     }()
 
     private lazy var collectionView: UICollectionView = {
-        let layout = UICollectionViewCompositionalLayout { _, _ -> NSCollectionLayoutSection? in
-            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalWidth(1.0))
-            let item = NSCollectionLayoutItem(layoutSize: itemSize)
-            item.contentInsets = NSDirectionalEdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6)
-            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.5))
-            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
-            let section = NSCollectionLayoutSection(group: group)
-            return section
-        }
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 8
+        layout.minimumLineSpacing = 8
+        layout.sectionInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.register(HamsterCollectionViewCell.self, forCellWithReuseIdentifier: HamsterCollectionViewCell.reuseIdentifier)
         view.backgroundColor = .systemBackground
@@ -150,13 +145,14 @@ final class MessagesViewController: MSMessagesAppViewController {
         updateStatus("Preparing hamster…")
         ImageLoader.shared.load(url: item.imageUrl) { [weak self] image in
             guard let self else { return }
-            guard let image = image else {
+            let resolvedImage = image ?? UIImage(named: "hamster_seed_1")
+            guard let resolvedImage else {
                 self.updateStatus("Failed to load image")
                 return
             }
             let layout = MSMessageTemplateLayout()
-            layout.image = image
-            layout.caption = item.tags.prefix(2).joined(separator: " · ")
+            layout.image = resolvedImage
+            layout.caption = "hamster"
             let message = MSMessage(session: MSSession())
             message.layout = layout
             conversation.insert(message) { error in
@@ -183,10 +179,18 @@ final class MessagesViewController: MSMessagesAppViewController {
     }
 }
 
-extension MessagesViewController: UICollectionViewDelegate {
+extension MessagesViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
         insertIntoConversation(item: item)
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let padding: CGFloat = 8 * 3 // left + right + inter-item
+        let w = max(80, floor((collectionView.bounds.width - padding) / 2.0))
+        return CGSize(width: w, height: w)
     }
 }
 
