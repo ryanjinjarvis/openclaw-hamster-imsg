@@ -59,7 +59,13 @@ final class MessagesViewController: MSMessagesAppViewController {
         super.viewDidLoad()
         configureHierarchy()
         searchBar.delegate = self
+        updateStatus("Loading hamsters…")
         bootstrap()
+    }
+
+    override func willBecomeActive(with conversation: MSConversation) {
+        super.willBecomeActive(with: conversation)
+        requestPresentationStyle(.expanded)
     }
 
     private func configureHierarchy() {
