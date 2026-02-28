@@ -41,7 +41,17 @@ final class ManifestCache {
     }
 
     func loadBundledSeed() -> HamsterManifest? {
-        guard let url = bundle.url(forResource: "Manifest/hamster_manifest_seed", withExtension: "json") else { return nil }
+        let candidates: [URL?] = [
+            bundle.url(forResource: "hamster_manifest_seed", withExtension: "json"),
+            bundle.url(forResource: "hamster_manifest_seed", withExtension: "json", subdirectory: "Manifest"),
+            bundle.url(forResource: "Manifest/hamster_manifest_seed", withExtension: "json")
+        ]
+
+        guard let url = candidates.compactMap({ $0 }).first else {
+            Logger.log("Bundled seed manifest not found in app bundle")
+            return nil
+        }
+
         do {
             let data = try Data(contentsOf: url)
             return try decoder.decode(HamsterManifest.self, from: data)
